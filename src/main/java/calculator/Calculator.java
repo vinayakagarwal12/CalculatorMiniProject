@@ -1,6 +1,10 @@
 package calculator;
 import java.util.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 public class Calculator {
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
+
     public static double square_root(double x)
     {
         double ans = Math.sqrt(x);
@@ -12,16 +16,16 @@ public class Calculator {
         for(int i=num; i>=1; i--) {
             res = res*i;
         }
-//        logger.info("Factorial of "+num);
-//        logger.info("!"+num+" = "+c);
+        logger.info("Factorial of "+num);
+        logger.info("!"+num+" = "+res);
         System.out.println("The Result is "+res+"\n");
         System.out.println("");
         return res;
     }
     public static double natural_log(double num){
         double res = Math.log(num);
-//        logger.info("Natural logarithm of"+num);
-//        logger.info("log("+num+") = "+c	);
+        logger.info("Natural logarithm of"+num);
+        logger.info("log("+num+") = "+res);
 //        System.out.println("");
         System.out.println("The Result is "+ res+"\n");
         System.out.println("");
@@ -29,8 +33,8 @@ public class Calculator {
     }
     public static double power_func(double num, double exp){
         double res = Math.pow(num,exp);
-//        logger.info(num+" powers "+exp);
-//        logger.info(num+"^"+exp+" = "+c);
+        logger.info(num+" powers "+exp);
+        logger.info(num+"^"+exp+" = "+res);
 //        System.out.println("");
         System.out.println("The Result is "+ res+"\n");
         System.out.println("");
