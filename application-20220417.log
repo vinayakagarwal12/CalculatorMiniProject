@@ -171,3 +171,4 @@
 2022-04-17 18:58:34.314 [main] INFO  calculator.Calculator - Natural logarithm of 1.0 = 0.0
 2022-04-17 18:58:34.315 [main] INFO  calculator.Calculator - Natural logarithm of 10.0 = 2.302585092994046
 2022-04-17 18:58:34.315 [main] INFO  calculator.Calculator - Natural logarithm of 2.0 = 0.6931471805599453
+2022-04-17 19:03:26.698 [main] INFO  calculator.Calculator - Factorial of -2 = 0
