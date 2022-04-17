@@ -15,11 +15,13 @@ public class Calculator
         return ans;
     }
     public static int factorial(int num){
-        if(num<0)
-            return 0;
-        int res = 1 ;
-        for(int i=num; i>=1; i--) {
-            res = res*i;
+        int res = 1;
+        if(num<=0)
+            res=0;
+        else {
+            for(int i=num; i>=1; i--) {
+                res = res*i;
+            }
         }
         logger.info("Factorial of "+num+" = "+res);
         System.out.println("Ans = "+res+"\n");
