@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        // commented stage 5 as using webhooks
+        // commented stage 1 as using webhooks
         // stage('Stage 1: Git clone') {
         //     steps {
         //         git url: 'https://github.com/vinayakagarwal12/Calculator.git',branch:'main'
