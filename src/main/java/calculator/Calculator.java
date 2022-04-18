@@ -9,7 +9,8 @@ public class Calculator
     public static double square_root(double x)
     {
         double ans = Math.sqrt(x);
-        logger.info("Square root of "+x+" = "+ans);
+        logger.info("Finding square root");
+        // logger.info("Square root of "+x+" = "+ans);
         System.out.println("Ans = "+ans+"\n");
         System.out.println("");
         return ans;
@@ -23,21 +24,24 @@ public class Calculator
                 res = res*i;
             }
         }
-        logger.info("Factorial of "+num+" = "+res);
+        logger.info("Finding factorial");
+        // logger.info("Factorial of "+num+" = "+res);
         System.out.println("Ans = "+res+"\n");
         System.out.println("");
         return res;
     }
     public static double natural_log(double num){
         double res = Math.log(num);
-        logger.info("Natural logarithm of "+num+" = "+res);
+        logger.info("Finding natural log");
+        // logger.info("Natural logarithm of "+num+" = "+res);
         System.out.println("Ans = "+res+"\n");
         System.out.println("");
         return res;
     }
     public static double power_func(double num, double exp){
         double res = Math.pow(num,exp);
-        logger.info(num+" powers "+exp+" = "+res);
+        logger.info("Finding power");
+        // logger.info(num+" powers "+exp+" = "+res);
         System.out.println("Ans = "+res+"\n");
         System.out.println("");
         return res;
